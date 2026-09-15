@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name — Portfolio</title>
+<meta name="description" content="Portfolio of Your Name — projects, work, and contact.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="logo">YN</a>
+    <nav class="nav">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="assets/cv.pdf" target="_blank" rel="noopener" class="nav-cv">CV</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap">
+    <p class="hero-eyebrow">Portfolio · 2026</p>
+    <h1 class="hero-title">Hi, I'm <span>Your Name.</span><br>I build things and figure out how they work.</h1>
+    <p class="hero-sub">A short line about what you do — e.g. "Frontend developer focused on fast, accessible interfaces" or "Computer science student building small useful tools."</p>
+    <div class="hero-actions">
+      <a href="#work" class="btn btn-primary">See my work</a>
+      <a href="assets/cv.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Download CV</a>
+    </div>
+  </section>
+
+  <section class="about wrap" id="about">
+    <div class="about-grid">
+      <h2 class="section-num">About</h2>
+      <div class="about-body">
+        <p>Write two or three sentences about yourself here — your background, what you're currently learning or working on, and what kind of problems you like solving. Keep it plain and specific rather than a list of buzzwords.</p>
+        <ul class="skills">
+          <li>HTML / CSS / JavaScript</li>
+          <li>Add your skills here</li>
+          <li>Add another skill</li>
+          <li>Add another</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="work wrap" id="work">
+    <h2 class="section-num">Selected work</h2>
+
+    <div class="projects" id="projectGrid">
+      <!-- Project 1 -->
+      <article class="project">
+        <div class="project-media">
+          <img src="https://placehold.co/640x400?text=Project+Screenshot" alt="Screenshot of Project One" loading="lazy">
+          <button class="play-btn" data-video="dQw4w9WgXcQ" aria-label="Play project video">▶</button>
+        </div>
+        <div class="project-body">
+          <h3>Project One</h3>
+          <p>One or two sentences on what this project is, what problem it solves, and what you built or learned. Keep it concrete.</p>
+          <div class="project-tags">
+            <span>React</span><span>Node.js</span><span>MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a href="https://example.com" target="_blank" rel="noopener">Visit site ↗</a>
+            <a href="https://github.com/yourname/project-one" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project">
+        <div class="project-media">
+          <img src="https://placehold.co/640x400?text=Project+Screenshot" alt="Screenshot of Project Two" loading="lazy">
+          <button class="play-btn" data-video="dQw4w9WgXcQ" aria-label="Play project video">▶</button>
+        </div>
+        <div class="project-body">
+          <h3>Project Two</h3>
+          <p>One or two sentences describing this project — the stack, the goal, and the outcome.</p>
+          <div class="project-tags">
+            <span>Python</span><span>Flask</span>
+          </div>
+          <div class="project-links">
+            <a href="https://example.com" target="_blank" rel="noopener">Visit site ↗</a>
+            <a href="https://github.com/yourname/project-two" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project">
+        <div class="project-media">
+          <img src="https://placehold.co/640x400?text=Project+Screenshot" alt="Screenshot of Project Three" loading="lazy">
+          <button class="play-btn" data-video="dQw4w9WgXcQ" aria-label="Play project video">▶</button>
+        </div>
+        <div class="project-body">
+          <h3>Project Three</h3>
+          <p>One or two sentences describing this project — the stack, the goal, and the outcome.</p>
+          <div class="project-tags">
+            <span>Java</span><span>Android</span>
+          </div>
+          <div class="project-links">
+            <a href="https://example.com" target="_blank" rel="noopener">Visit site ↗</a>
+            <a href="https://github.com/yourname/project-three" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="contact wrap" id="contact">
+    <h2 class="section-num">Contact</h2>
+    <div class="contact-grid">
+      <p class="contact-lead">Have a project in mind, or just want to say hi? Reach out — I usually reply within a day or two.</p>
+      <div class="contact-links">
+        <a href="mailto:you@example.com">you@example.com ↗</a>
+        <a href="https://github.com/yourname" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://linkedin.com/in/yourname" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer wrap">
+  <p>© 2026 Your Name. Built with HTML, CSS, and JS — hosted on GitHub Pages.</p>
+</footer>
+
+<!-- Video modal -->
+<div class="video-modal" id="videoModal" aria-hidden="true">
+  <div class="video-modal-inner">
+    <button class="video-close" id="videoClose" aria-label="Close video">✕</button>
+    <div class="video-frame-wrap">
+      <iframe id="videoFrame" src="" title="Project video" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
