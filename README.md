@@ -1,32 +1,48 @@
 # My Portfolio
 
-A free, static portfolio site. No build tools, no frameworks — just HTML, CSS, and JS.
+Welcome to my personal portfolio website.
 
-## Files
-- `index.html` — page structure and content (edit your name, bio, projects, links here)
-- `style.css` — all styling (colors are defined once at the top as CSS variables)
-- `script.js` — powers the video popup and mobile menu
-- `assets/` — put your CV PDF and any images here
+This portfolio showcases my projects, technical skills, experience, and background as a Computer Science undergraduate interested in software development and AI.
 
-## To customize
-1. Replace "Your Name" everywhere in `index.html`.
-2. Rewrite the hero line and About paragraph.
-3. For each project: swap the placeholder image URL for your own screenshot, change
-   `data-video="dQw4w9WgXcQ"` to your own YouTube video ID (the part after `v=` in
-   a YouTube URL), and update the "Visit site" / "Code" links.
-4. Add more `<article class="project">...</article>` blocks to add more projects —
-   just copy-paste one and edit it.
-5. Put your real CV file at `assets/cv.pdf` (must be named exactly `cv.pdf`, or update
-   the links in `index.html` to match your filename).
-6. Update the email, GitHub, and LinkedIn links in the Contact section.
+## About
 
-## To preview locally
-Open the folder in VS Code, right-click `index.html`, and choose
-"Open with Live Server" (after installing the Live Server extension).
+I am a Computer Science student with an interest in software development, artificial intelligence, and building practical technology solutions. My portfolio highlights some of the projects I have worked on throughout my academic and professional journey.
 
-## To deploy (GitHub Pages, free)
-See the deployment steps provided in chat, or:
-1. Create a new GitHub repo.
-2. Push this folder to it.
-3. In the repo, go to Settings → Pages → set source to the `main` branch, root folder.
-4. Your site will be live at `https://yourusername.github.io/repo-name`.
+## What's Included
+
+- **About Me** — A brief introduction and overview of my background.
+- **Projects** — Selected academic and personal projects showcasing my development and problem-solving skills.
+- **Skills** — My technical skills and areas of experience.
+- **Experience** — Relevant internship and project experience.
+- **CV** — My current resume for a more detailed overview of my education, skills, and experience.
+- **Contact** — Links to my email, GitHub, and LinkedIn.
+
+## Technologies
+
+The portfolio website is built using:
+
+- HTML
+- CSS
+- JavaScript
+
+It is a lightweight static website with no frameworks or build tools.
+
+## Projects
+
+The portfolio includes projects covering areas such as:
+
+- Web development
+- Software development
+- Data structures and algorithms
+- AI and emerging technologies
+- Interactive applications
+
+Each project includes relevant information and links where available.
+
+## Connect With Me
+
+Feel free to explore my portfolio and connect with me through GitHub or LinkedIn.
+
+---
+
+**© 2026 My Portfolio**
