@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name — Portfolio</title>
-<meta name="description" content="Portfolio of Your Name — projects, work, and contact.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Noor e Sahar — Portfolio</title>
+<meta name="description" content="Portfolio of Noor e Sahar — Computer Science undergraduate and aspiring Software Engineering / AI Intern. Projects, experience, and contact.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -12,14 +12,20 @@
 </head>
 <body>
 
+<div class="bg-animated" aria-hidden="true">
+  <div class="bg-blob bg-blob-1"></div>
+  <div class="bg-blob bg-blob-2"></div>
+  <div class="bg-blob bg-blob-3"></div>
+</div>
+
 <header class="site-header">
   <div class="wrap header-inner">
-    <a href="#top" class="logo">YN</a>
+    <a href="#top" class="logo">NS</a>
     <nav class="nav">
       <a href="#work">Work</a>
-      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
-      <a href="assets/cv.pdf" target="_blank" rel="noopener" class="nav-cv">CV</a>
     </nav>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -29,123 +35,431 @@
 
 <main id="top">
 
+  <!-- HERO -->
   <section class="hero wrap">
-    <p class="hero-eyebrow">Portfolio · 2026</p>
-    <h1 class="hero-title">Hi, I'm <span>Your Name.</span><br>I build things and figure out how they work.</h1>
-    <p class="hero-sub">A short line about what you do — e.g. "Frontend developer focused on fast, accessible interfaces" or "Computer science student building small useful tools."</p>
+    <span class="hero-badge"><i class="dot"></i>Open to Software Engineering &amp; AI internships</span>
+    <h1 class="hero-title">Hi, I'm <span>Noor e Sahar.</span><br>Web &amp; Software Developer,<br>Exploring AI Systems.</h1>
+    <p class="hero-sub">I build interfaces, the backend systems behind them, and full web applications — and I'm branching out into game and mobile development while learning how AI and LLM concepts fit into real products.</p>
     <div class="hero-actions">
       <a href="#work" class="btn btn-primary">See my work</a>
       <a href="assets/cv.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Download CV</a>
     </div>
+    <div class="social-row">
+      <a href="https://github.com/Saharenoor" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.9-1.3 2.74-1.02 2.74-1.02.56 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.68 0 3.84-2.35 4.68-4.58 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+      </a>
+      <a href="https://linkedin.com/in/noor-e-sahar-529540300" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7.5 10v7M7.5 7v.01M12 17v-4.2c0-1.5.9-2.3 2.1-2.3 1.2 0 2.4.8 2.4 2.3V17"/></svg>
+      </a>
+      <a href="mailto:saharenoor518@gmail.com" aria-label="Email" class="social-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+      </a>
+    </div>
   </section>
 
+  <!-- ABOUT / PHILOSOPHY -->
   <section class="about wrap" id="about">
-    <div class="about-grid">
-      <h2 class="section-num">About</h2>
-      <div class="about-body">
-        <p>Write two or three sentences about yourself here — your background, what you're currently learning or working on, and what kind of problems you like solving. Keep it plain and specific rather than a list of buzzwords.</p>
-        <ul class="skills">
-          <li>HTML / CSS / JavaScript</li>
-          <li>Add your skills here</li>
-          <li>Add another skill</li>
-          <li>Add another</li>
-        </ul>
+    <h2 class="section-num reveal">From coursework to <span class="accent-text">working systems</span></h2>
+    <p class="about-lead reveal">I'm a Computer Science student at the University of Central Punjab, currently in my 6th semester. I like taking what I learn in class — data structures, algorithms, OOP — and actually building with it: a role-based booking platform, a Git-inspired version control tool from scratch, a web game, even a flame-detecting Arduino car. I work across the full web stack — frontend, backend, and everything in between — and I'm currently branching out into game and mobile development, alongside a growing interest in how AI and LLM-based systems fit into everyday applications.</p>
+
+    <div class="feature-cards">
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h.01M15 9h.01M9 15c.7.7 1.9 1 3 1s2.3-.3 3-1"/></svg>
+        </div>
+        <h3>AI-Curious</h3>
+        <p>Exploring AI/LLM concepts hands-on during an internship, with an eye toward using them responsibly inside real products — not just as a buzzword.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 13 9 5 9-5M3 8v5M21 8v5"/></svg>
+        </div>
+        <h3>Full-Stack Web Developer</h3>
+        <p>Comfortable on both sides of the stack — building interfaces in React and handling the backend, data, and web development logic that powers them.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="7" width="20" height="10" rx="5"/><circle cx="8" cy="12" r="1.6" fill="currentColor" stroke="none"/><path d="M14.5 10.5h.01M17 12h.01M15.7 13.5h.01"/></svg>
+        </div>
+        <h3>Branching Out</h3>
+        <p>Currently getting into game development and picking up mobile development — the maze game was my first step into game logic, and I'm building on that.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2 4 6v6c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V6l-8-4Z"/><path d="m9 12 2 2 4-4"/></svg>
+        </div>
+        <h3>Builder Mindset</h3>
+        <p>I'd rather ship a small, working prototype than talk about a big idea — Takhleeq Cohort 11 and every project below started that way.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg>
+        </div>
+        <h3>Core CS</h3>
+        <p>A strong base in data structures, algorithms, and OOP — the kind of foundation that made GitHub Lite possible from scratch, in C++.</p>
       </div>
     </div>
   </section>
 
+  <!-- EXPERIENCE -->
+  <section class="experience wrap" id="experience">
+    <h2 class="section-num reveal">Professional Experience</h2>
+    <p class="section-sub reveal">A timeline of internships, incubation programs, and community involvement.</p>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-icon timeline-icon--blue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18"/></svg>
+        </div>
+        <div class="timeline-card">
+          <div class="timeline-head">
+            <h3>Artificial Intelligence Intern</h3>
+            <span class="timeline-date">Mar 2026 – Apr 2026</span>
+          </div>
+          <p class="timeline-org">Softnexa</p>
+          <span class="timeline-tag timeline-tag--blue">Internship</span>
+          <p>Worked on AI-focused tasks while gaining practical industry experience and exposure to real-world development environments.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-icon timeline-icon--purple">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 20c0-3 2.7-5 6-5s6 2 6 5M15 15c2.6.2 4.5 1.8 4.5 5"/></svg>
+        </div>
+        <div class="timeline-card">
+          <div class="timeline-head">
+            <h3>Takhleeq Cohort 11</h3>
+            <span class="timeline-date">UCP Incubation Program</span>
+          </div>
+          <p class="timeline-org">University of Central Punjab</p>
+          <span class="timeline-tag timeline-tag--purple">Incubation</span>
+          <span class="timeline-tag timeline-tag--teal">Marketing</span>
+          <p>Selected as a member of Takhleeq Cohort 11, an innovation-driven incubation program focused on entrepreneurship, product development, and technology solutions. Within the team, I lead the marketing side of our project — handling promotion, outreach, and how we present the product to the outside world.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="achievements reveal">
+      <h3 class="achievements-title">Competitions &amp; Certifications</h3>
+      <div class="achievements-grid">
+        <div>
+          <h4 class="achievements-sub">Competitions</h4>
+          <ul>
+            <li>Engineering Olympiad — Code Rush (SET UCP)</li>
+            <li>Inter-University Code Master Competition — Lahore Youth Festival</li>
+            <li>Olympiad 5.0 — Speed Programming (UOL)</li>
+            <li>Karo Takhleeq Competition — Participant</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="achievements-sub">Certifications</h4>
+          <ul>
+            <li>Meta React Basics</li>
+            <li>Programming with JavaScript</li>
+            <li>React Basics &amp; Native</li>
+            <li>Version Control (Git &amp; GitHub)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS / EXPERTISE STACK -->
+  <section class="skills-section wrap" id="skills">
+    <h2 class="section-num reveal">Expertise <span class="accent-text">Stack</span></h2>
+    <p class="section-sub reveal">The tools and concepts I reach for when building something end to end.</p>
+
+    <div class="expertise-grid">
+      <div class="expertise-card reveal">
+        <h3 class="expertise-title">Frontend</h3>
+        <div class="expertise-tags">
+          <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive UI</span>
+        </div>
+      </div>
+      <div class="expertise-card reveal">
+        <h3 class="expertise-title">Backend &amp; Web Dev</h3>
+        <div class="expertise-tags">
+          <span>MERN Stack</span><span>Node.js</span><span>REST APIs</span><span>Web Development</span><span>Odoo Platform</span>
+        </div>
+      </div>
+      <div class="expertise-card reveal">
+        <h3 class="expertise-title">Design &amp; Marketing</h3>
+        <div class="expertise-tags">
+          <span>Graphic Design</span><span>Marketing</span>
+        </div>
+      </div>
+      <div class="expertise-card reveal">
+        <h3 class="expertise-title">AI &amp; Systems</h3>
+        <div class="expertise-tags">
+          <span>AI / LLM Concepts</span><span>Applied Problem Solving</span>
+        </div>
+      </div>
+      <div class="expertise-card reveal">
+        <h3 class="expertise-title">Core CS</h3>
+        <div class="expertise-tags">
+          <span>C++</span><span>Data Structures</span><span>Algorithms</span><span>OOP</span><span>File Handling</span>
+        </div>
+      </div>
+      <div class="expertise-card reveal">
+        <h3 class="expertise-title">Tools &amp; Platforms</h3>
+        <div class="expertise-tags">
+          <span>Git &amp; GitHub</span><span>VS Code</span><span>Arduino IDE</span>
+        </div>
+      </div>
+      <div class="expertise-card reveal">
+        <h3 class="expertise-title">Game &amp; Mobile <span class="expertise-note">(learning)</span></h3>
+        <div class="expertise-tags">
+          <span>Game Logic</span><span>Mobile Development</span>
+        </div>
+      </div>
+      <div class="expertise-card reveal">
+        <h3 class="expertise-title">Robotics</h3>
+        <div class="expertise-tags">
+          <span>Arduino</span><span>Embedded C++</span><span>Sensors</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SELECTED WORK -->
   <section class="work wrap" id="work">
-    <h2 class="section-num">Selected work</h2>
+    <h2 class="section-num reveal">Selected <span class="accent-text">Work</span></h2>
+    <p class="section-sub reveal">Projects from coursework, competitions, and personal builds.</p>
 
     <div class="projects" id="projectGrid">
-      <!-- Project 1 -->
-      <article class="project">
-        <div class="project-media">
-          <img src="https://placehold.co/640x400?text=Project+Screenshot" alt="Screenshot of Project One" loading="lazy">
-          <button class="play-btn" data-video="dQw4w9WgXcQ" aria-label="Play project video">▶</button>
+
+      <!-- Zero-G Eats -->
+      <article class="project reveal">
+        <div class="project-media project-media--frontend">
+          <span class="project-category">Frontend</span>
+          <svg class="project-glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.4">
+            <circle cx="32" cy="32" r="14"/>
+            <ellipse cx="32" cy="32" rx="26" ry="9" transform="rotate(-20 32 32)"/>
+            <circle cx="16" cy="14" r="1.4" fill="currentColor" stroke="none"/>
+            <circle cx="52" cy="18" r="1" fill="currentColor" stroke="none"/>
+            <circle cx="10" cy="46" r="1" fill="currentColor" stroke="none"/>
+            <circle cx="54" cy="48" r="1.4" fill="currentColor" stroke="none"/>
+          </svg>
         </div>
         <div class="project-body">
-          <h3>Project One</h3>
-          <p>One or two sentences on what this project is, what problem it solves, and what you built or learned. Keep it concrete.</p>
+          <h3>Zero-G Eats — Food Menu Website</h3>
+          <p>A visually immersive, space-themed restaurant menu site built entirely in vanilla HTML, CSS, and JavaScript — no frameworks. Three category cards (Fast Food, Healthy Food, Shakes) levitate on the homepage with continuous antigravity-style animation; picking one opens a menu where dish cards drift and bob against an animated star field and shifting ambient light blobs.</p>
+          <p class="project-detail">Built with a custom cursor, scroll-triggered reveal animations, expandable ingredient panels with smooth CSS transitions, and a sticky tab-switching nav — all as a single page, no reloads.</p>
           <div class="project-tags">
-            <span>React</span><span>Node.js</span><span>MongoDB</span>
-          </div>
-          <div class="project-links">
-            <a href="https://example.com" target="_blank" rel="noopener">Visit site ↗</a>
-            <a href="https://github.com/yourname/project-one" target="_blank" rel="noopener">Code ↗</a>
+            <span>HTML5</span><span>CSS3</span><span>Vanilla JS</span>
           </div>
         </div>
       </article>
 
-      <!-- Project 2 -->
-      <article class="project">
-        <div class="project-media">
-          <img src="https://placehold.co/640x400?text=Project+Screenshot" alt="Screenshot of Project Two" loading="lazy">
-          <button class="play-btn" data-video="dQw4w9WgXcQ" aria-label="Play project video">▶</button>
+      <!-- Appointment System -->
+      <article class="project reveal">
+        <div class="project-media project-media--fullstack">
+          <span class="project-category">Full-Stack</span>
+          <svg class="project-glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.4">
+            <rect x="12" y="14" width="40" height="36" rx="3"/>
+            <path d="M12 24h40M22 10v8M42 10v8"/>
+            <path d="m24 36 5 5 11-11"/>
+          </svg>
         </div>
         <div class="project-body">
-          <h3>Project Two</h3>
-          <p>One or two sentences describing this project — the stack, the goal, and the outcome.</p>
+          <h3>Student–Teacher Appointment Management System</h3>
+          <p>A role-based appointment scheduling platform built for the Karo Takhleeq Competition, integrated with UCP's Odoo system. Handles teacher availability tracking, booking, notifications, an approval/rejection workflow, and privacy-focused access control between students and faculty.</p>
           <div class="project-tags">
-            <span>Python</span><span>Flask</span>
-          </div>
-          <div class="project-links">
-            <a href="https://example.com" target="_blank" rel="noopener">Visit site ↗</a>
-            <a href="https://github.com/yourname/project-two" target="_blank" rel="noopener">Code ↗</a>
+            <span>Odoo</span><span>Role-Based Access</span><span>Workflow Automation</span>
           </div>
         </div>
       </article>
 
-      <!-- Project 3 -->
-      <article class="project">
-        <div class="project-media">
-          <img src="https://placehold.co/640x400?text=Project+Screenshot" alt="Screenshot of Project Three" loading="lazy">
-          <button class="play-btn" data-video="dQw4w9WgXcQ" aria-label="Play project video">▶</button>
+      <!-- GitHub Lite -->
+      <article class="project reveal">
+        <div class="project-media project-media--core">
+          <span class="project-category">Core CS</span>
+          <svg class="project-glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.4">
+            <circle cx="16" cy="14" r="5"/><circle cx="16" cy="50" r="5"/><circle cx="48" cy="32" r="5"/>
+            <path d="M16 19v26M16 32h27M43 32 32 21"/>
+          </svg>
         </div>
         <div class="project-body">
-          <h3>Project Three</h3>
-          <p>One or two sentences describing this project — the stack, the goal, and the outcome.</p>
+          <h3>GitHub Lite — Git-Like Version Control System</h3>
+          <p>A console-based, Git-inspired version control system written in C++ that supports commits, branching, merging, rollback, and file tracking — built without any external VCS libraries, just core data structures.</p>
+          <p class="project-detail">Red-Black Trees keep the commit index balanced for fast lookups, Stacks power undo/rollback history, Queues process commit logs in order, BSTs handle file lookups, Linked Lists chain branch histories together, and a Heap prioritizes changes during merges.</p>
           <div class="project-tags">
-            <span>Java</span><span>Android</span>
-          </div>
-          <div class="project-links">
-            <a href="https://example.com" target="_blank" rel="noopener">Visit site ↗</a>
-            <a href="https://github.com/yourname/project-three" target="_blank" rel="noopener">Code ↗</a>
+            <span>C++</span><span>Red-Black Trees</span><span>Stacks &amp; Queues</span><span>BSTs</span><span>Heaps</span>
           </div>
         </div>
       </article>
+
+      <!-- Maze Game -->
+      <article class="project reveal">
+        <div class="project-media project-media--frontend">
+          <span class="project-category">Frontend</span>
+          <svg class="project-glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.4">
+            <rect x="8" y="8" width="48" height="48" rx="2"/>
+            <path d="M8 20h20M20 8v20M8 44h16M32 8v16M32 32h24M44 32v24M16 44v12M32 44h16"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <h3>Web-Based Maze Game</h3>
+          <p>Converted a console-based maze game into an interactive browser application, rebuilding the game logic and rendering with HTML, CSS, and JavaScript so it runs entirely in the browser.</p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Arduino Car -->
+      <article class="project reveal">
+        <div class="project-media project-media--robotics">
+          <span class="project-category">Robotics</span>
+          <svg class="project-glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.4">
+            <path d="M8 40h48M12 40l4-12h32l4 12"/>
+            <circle cx="18" cy="44" r="6"/><circle cx="46" cy="44" r="6"/>
+            <path d="M26 28V18a2 2 0 0 1 2-2h4M32 16h4a2 2 0 0 1 2 2v10"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <h3>Embedded Systems: Arduino Smart Car</h3>
+          <p>A remote-controlled car built on Arduino with an onboard flame sensor for real-time fire detection and an actuated extinguishing mechanism that triggers automatically once a flame is sensed nearby.</p>
+          <p class="project-detail">The build combines embedded C++ for the sensor-read-and-respond loop with basic motor control logic, turning a hobby RC platform into a small safety-focused robot.</p>
+          <div class="project-tags">
+            <span>Arduino</span><span>Embedded C++</span><span>Sensors</span>
+          </div>
+        </div>
+      </article>
+
     </div>
   </section>
 
-  <section class="contact wrap" id="contact">
-    <h2 class="section-num">Contact</h2>
-    <div class="contact-grid">
-      <p class="contact-lead">Have a project in mind, or just want to say hi? Reach out — I usually reply within a day or two.</p>
-      <div class="contact-links">
-        <a href="mailto:you@example.com">you@example.com ↗</a>
-        <a href="https://github.com/yourname" target="_blank" rel="noopener">GitHub ↗</a>
-        <a href="https://linkedin.com/in/yourname" target="_blank" rel="noopener">LinkedIn ↗</a>
+  <!-- WHY -->
+  <section class="why wrap" id="approach">
+    <h2 class="section-num reveal">Why frontend <span class="accent-text">+ AI</span>?</h2>
+    <p class="section-sub reveal">A short version of how I think about building software right now.</p>
+
+    <div class="why-blocks">
+      <div class="why-block reveal">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M2 9h2M2 15h2M20 9h2M20 15h2M9 2v2M15 2v2M9 20v2M15 20v2"/></svg>
+        </div>
+        <h3>Systems before style</h3>
+        <p>Before I touch a framework, I want to understand the structure underneath it. Building GitHub Lite from raw data structures taught me more about how real version control works than using Git ever did on its own — that habit carries into everything else I build.</p>
       </div>
+      <div class="why-block reveal">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 13 9 5 9-5M3 8v5M21 8v5"/></svg>
+        </div>
+        <h3>Learning by shipping</h3>
+        <p>I'd rather have five small, finished projects than one perfect idea that never left the whiteboard. Competitions, incubation, and internships have all pushed me to ship something real under a deadline — and that pressure is where I've learned the most.</p>
+      </div>
+      <div class="why-block reveal">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></svg>
+        </div>
+        <h3>AI as a layer, not a headline</h3>
+        <p>My time working on AI-focused tasks at Softnexa showed me that the interesting part isn't the model — it's how carefully you wire it into a product a person actually uses. That's the direction I want to keep growing in: solid frontend and systems fundamentals, with AI layered in thoughtfully rather than bolted on.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FRONTEND + BACKEND + AI -->
+  <section class="why wrap" id="fullstack-ai">
+    <h2 class="section-num reveal">Frontend <span class="accent-text">+ Backend + AI</span></h2>
+    <p class="section-sub reveal">How the three pieces actually connect in what I build.</p>
+
+    <div class="why-blocks">
+      <div class="why-block reveal">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 7a8 8 0 0 1 13-6M20 17a8 8 0 0 1-13 6"/><path d="m17 1 3 3-3 3M7 23l-3-3 3-3"/></svg>
+        </div>
+        <h3>One person, full loop</h3>
+        <p>I don't like handing off "the backend" to someone else in my head — on projects like the appointment system, I design the interface a user sees and the role-based logic, data, and workflow behind it, so the two sides are built to fit each other from the start.</p>
+      </div>
+      <div class="why-block reveal">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
+        </div>
+        <h3>Backend as the backbone</h3>
+        <p>The interface is what people see, but the backend is what makes it trustworthy — access control, data structure, and clean APIs. Working with the MERN stack and Odoo has taught me to treat that layer as seriously as anything on screen.</p>
+      </div>
+      <div class="why-block reveal">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M5 19l2-2"/></svg>
+        </div>
+        <h3>AI that talks to both ends</h3>
+        <p>What I want to build next isn't AI bolted onto a UI — it's AI woven through the whole loop: an interface simple enough to use, a backend that feeds it the right data, and a model in the middle doing something genuinely useful with it.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESIGN, MARKETING & SOCIAL -->
+  <section class="why wrap" id="marketing">
+    <h2 class="section-num reveal">Design, <span class="accent-text">Marketing &amp; Social</span></h2>
+    <p class="section-sub reveal">Beyond the code — how I help a project reach people, on Takhleeq Cohort 11 and beyond.</p>
+
+    <div class="why-blocks">
+      <div class="why-block reveal">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 16V8a2 2 0 0 1 2-2h4l3-3v18l-3-3H5a2 2 0 0 1-2-2Z"/><path d="M16 8a4 4 0 0 1 0 8"/></svg>
+        </div>
+        <h3>Project design &amp; direction</h3>
+        <p>I take an active role in how a project looks and presents itself — from visual design decisions to shaping the overall direction of what we're building and how it's positioned.</p>
+      </div>
+      <div class="why-block reveal">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 3v18h18"/><path d="m7 15 4-6 4 3 5-8"/></svg>
+        </div>
+        <h3>Marketing targets</h3>
+        <p>For Takhleeq Cohort 11, I'm exclusively handling the marketing side of the project — setting goals, planning how we reach our audience, and tracking whether our outreach is actually landing.</p>
+      </div>
+      <div class="why-block reveal">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="6" r="2.6"/><circle cx="18" cy="18" r="2.6"/><path d="m8.3 10.8 7.4-3.6M8.3 13.2l7.4 3.6"/></svg>
+        </div>
+        <h3>Social &amp; community</h3>
+        <p>I run the social media presence for the project end to end — content, posting, and community engagement — so the technical work has an audience that actually sees it.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact wrap" id="contact">
+    <h2 class="section-num reveal">Contact</h2>
+    <p class="contact-lead reveal">Have a project in mind, an internship opening, or just want to say hi? Reach out — I usually reply within a day or two.</p>
+
+    <div class="contact-icon-grid reveal">
+      <a href="mailto:saharenoor518@gmail.com" class="contact-icon-card">
+        <span class="contact-icon-circle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+        </span>
+        <span>Email</span>
+      </a>
+      <a href="https://linkedin.com/in/noor-e-sahar-529540300" target="_blank" rel="noopener" class="contact-icon-card">
+        <span class="contact-icon-circle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7.5 10v7M7.5 7v.01M12 17v-4.2c0-1.5.9-2.3 2.1-2.3 1.2 0 2.4.8 2.4 2.3V17"/></svg>
+        </span>
+        <span>LinkedIn</span>
+      </a>
+      <a href="https://github.com/Saharenoor" target="_blank" rel="noopener" class="contact-icon-card">
+        <span class="contact-icon-circle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.9-1.3 2.74-1.02 2.74-1.02.56 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.68 0 3.84-2.35 4.68-4.58 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+        </span>
+        <span>GitHub</span>
+      </a>
+    </div>
+
+    <p class="contact-phone reveal">Or call/text: <a href="tel:+923269111181">0326-9111181</a></p>
+
+    <div class="contact-signature reveal">
+      <p class="signature-name">Noor e Sahar</p>
+      <p class="signature-role">Web &amp; Software Developer · Exploring AI Systems</p>
+      <p class="signature-loc">Lahore, Pakistan</p>
     </div>
   </section>
 
 </main>
 
 <footer class="site-footer wrap">
-  <p>© 2026 Your Name. Built with HTML, CSS, and JS — hosted on GitHub Pages.</p>
+  <p>© 2026 Noor e Sahar. Built with HTML, CSS, and JS — hosted on GitHub Pages.</p>
 </footer>
-
-<!-- Video modal -->
-<div class="video-modal" id="videoModal" aria-hidden="true">
-  <div class="video-modal-inner">
-    <button class="video-close" id="videoClose" aria-label="Close video">✕</button>
-    <div class="video-frame-wrap">
-      <iframe id="videoFrame" src="" title="Project video" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-    </div>
-  </div>
-</div>
 
 <script src="script.js"></script>
 </body>
