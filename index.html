@@ -238,7 +238,7 @@
         </div>
         <div class="project-body">
           <h3>Zero-G Eats — Food Menu Website</h3>
-          <p>A visually immersive, space-themed restaurant menu site built entirely in vanilla HTML, CSS, and JavaScript — no frameworks. Three category cards (Fast Food, Healthy Food, Shakes) levitate on the homepage with continuous antigravity-style animation; picking one opens a menu where dish cards drift and bob against an animated star field and shifting ambient light blobs.</p>
+          <p>A visually immersive, space-themed restaurant menu site built entirely in vanilla HTML, CSS, and JavaScript — no frameworks. Three category cards (Fast Food, Healthy Food, Shakes) float on the homepage with a continuous drifting animation; picking one opens a menu where dish cards drift and bob against an animated star field and shifting ambient light blobs.</p>
           <p class="project-detail">Built with a custom cursor, scroll-triggered reveal animations, expandable ingredient panels with smooth CSS transitions, and a sticky tab-switching nav — all as a single page, no reloads.</p>
           <div class="project-tags">
             <span>HTML5</span><span>CSS3</span><span>Vanilla JS</span>
@@ -263,26 +263,9 @@
         </div>
       </article>
 
-      <!-- GitHub Lite -->
-      <article class="project reveal">
-        <div class="project-media project-media--core" data-video-type="local" data-video="assets/videos/github_lite.mp4" data-video-title="GitHub Lite — demo">
-          <span class="project-category">Core CS</span>
-          <img class="project-thumb" src="assets/images/Githublite.png" alt="GitHub Lite screenshot">
-          <button class="project-play" aria-label="Play GitHub Lite video">▶</button>
-        </div>
-        <div class="project-body">
-          <h3>GitHub Lite — Git-Like Version Control System</h3>
-          <p>A console-based, Git-inspired version control system written in C++ that supports commits, branching, merging, rollback, and file tracking — built without any external VCS libraries, just core data structures.</p>
-          <p class="project-detail">Red-Black Trees keep the commit index balanced for fast lookups, Stacks power undo/rollback history, Queues process commit logs in order, BSTs handle file lookups, Linked Lists chain branch histories together, and a Heap prioritizes changes during merges.</p>
-          <div class="project-tags">
-            <span>C++</span><span>Red-Black Trees</span><span>Stacks &amp; Queues</span><span>BSTs</span><span>Heaps</span>
-          </div>
-        </div>
-      </article>
-
       <!-- Maze Game -->
       <article class="project reveal">
-        <div class="project-media project-media--frontend" data-video-type="" data-video="" data-video-title="Maze Game — demo">
+        <div class="project-media project-media--frontend" data-video-type="local" data-video="assets/videos/Maze_game.mp4" data-video-title="Maze Game — demo">
           <span class="project-category">Frontend</span>
           <img class="project-thumb" src="assets/images/Maze_cut.png" alt="Maze game screenshot">
           <button class="project-play" aria-label="Play Maze Game video">▶</button>
@@ -296,23 +279,27 @@
         </div>
       </article>
 
-      <!-- Arduino Car -->
+      <!-- LAN Shooter -->
       <article class="project reveal">
-        <div class="project-media project-media--robotics" data-video-type="local" data-video="assets/videos/arduino_car.mp4" data-video-title="Arduino Smart Car — demo">
-          <span class="project-category">Robotics</span>
-          <img class="project-thumb" src="assets/images/arduino_car.png" alt="Arduino smart car photo">
-          <button class="project-play" aria-label="Play Arduino Smart Car video">▶</button>
+        <div class="project-media project-media--core" data-video-type="local" data-video="assets/videos/shootinggame.mp4" data-video-title="LAN Top-Down Shooter — demo">
+          <span class="project-category">Game Dev</span>
+          <img class="project-thumb" src="assets/images/shooter.png" alt="LAN top-down shooter screenshot">
+          <button class="project-play" aria-label="Play LAN Top-Down Shooter video">▶</button>
         </div>
         <div class="project-body">
-          <h3>Embedded Systems: Arduino Smart Car</h3>
-          <p>A remote-controlled car built on Arduino with an onboard flame sensor for real-time fire detection and an actuated extinguishing mechanism that triggers automatically once a flame is sensed nearby.</p>
-          <p class="project-detail">The build combines embedded C++ for the sensor-read-and-respond loop with basic motor control logic, turning a hobby RC platform into a small safety-focused robot.</p>
+          <h3>LAN Top-Down Shooter — Real-Time Multiplayer Game</h3>
+          <p>A real-time multiplayer top-down shooter built in Python with Pygame and raw sockets, supporting LAN play across multiple machines.</p>
+          <p class="project-detail">Implements a hybrid TCP/UDP networking model — TCP for reliable game events (joins, hits, kills), UDP for real-time position and bullet syncing — with a multi-threaded, server-authoritative architecture for consistent game state across clients.</p>
           <div class="project-tags">
-            <span>Arduino</span><span>Embedded C++</span><span>Sensors</span>
+            <span>Python</span><span>Pygame</span><span>Sockets</span><span>Multithreading</span>
           </div>
         </div>
       </article>
 
+    </div>
+
+    <div class="work-more reveal">
+      <a href="projects.html" class="btn btn-ghost">View More Projects →</a>
     </div>
   </section>
 
@@ -457,6 +444,7 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen hidden></iframe>
       <video id="videoFrameLocal" controls hidden></video>
+      <p class="video-modal-empty" id="videoModalEmpty" hidden>No video has been added yet — check back soon!</p>
     </div>
   </div>
 </div>

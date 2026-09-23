@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>More Projects — Noor e Sahar</title>
+<meta name="description" content="More projects by Noor e Sahar — Triple Challenge Arena, GitHub Lite, and Arduino Smart Car.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-animated" aria-hidden="true">
+  <div class="bg-blob bg-blob-1"></div>
+  <div class="bg-blob bg-blob-2"></div>
+  <div class="bg-blob bg-blob-3"></div>
+</div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="logo">NS</a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="index.html#work">Work</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- MORE PROJECTS -->
+  <section class="more-work wrap" id="more-work">
+    <a href="index.html#work" class="back-link reveal">← Back to Selected Work</a>
+    <h2 class="section-num reveal">More <span class="accent-text">Projects</span></h2>
+    <p class="section-sub reveal">Additional builds and experiments beyond the featured work on the homepage.</p>
+
+    <div class="projects" id="moreProjectGrid">
+
+      <!-- Triple Challenge Arena -->
+      <article class="project reveal">
+        <div class="project-media project-media--frontend" data-video-type="local" data-video="assets/videos/triplearena.mp4" data-video-title="Triple Challenge Arena — demo">
+          <span class="project-category">Frontend</span>
+          <img class="project-thumb" src="assets/images/triplearena.png" alt="Triple Challenge Arena screenshot">
+          <button class="project-play" aria-label="Play Triple Challenge Arena video">▶</button>
+        </div>
+        <div class="project-body">
+          <h3>Triple Challenge Arena — Multiplayer Gaming Platform</h3>
+          <p>A frontend-only multiplayer gaming platform built with React, Vite, and Tailwind CSS. Players create a challenge, get matched in a simulated lobby, and compete across three mini-games — Tic Tac Toe, a hint-based word guesser, and a timed trivia round — with live scoring and a winner reveal at the end.</p>
+          <div class="project-tags">
+            <span>React</span><span>Vite</span><span>Tailwind CSS</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- GitHub Lite -->
+      <article class="project reveal">
+        <div class="project-media project-media--core" data-video-type="local" data-video="assets/videos/github_lite.mp4" data-video-title="GitHub Lite — demo">
+          <span class="project-category">Core CS</span>
+          <img class="project-thumb" src="assets/images/Githublite.png" alt="GitHub Lite screenshot">
+          <button class="project-play" aria-label="Play GitHub Lite video">▶</button>
+        </div>
+        <div class="project-body">
+          <h3>GitHub Lite — Git-Like Version Control System</h3>
+          <p>A console-based, Git-inspired version control system written in C++ that supports commits, branching, merging, rollback, and file tracking — built without any external VCS libraries, just core data structures.</p>
+          <p class="project-detail">Red-Black Trees keep the commit index balanced for fast lookups, Stacks power undo/rollback history, Queues process commit logs in order, BSTs handle file lookups, Linked Lists chain branch histories together, and a Heap prioritizes changes during merges.</p>
+          <div class="project-tags">
+            <span>C++</span><span>Red-Black Trees</span><span>Stacks &amp; Queues</span><span>BSTs</span><span>Heaps</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Arduino Car -->
+      <article class="project reveal">
+        <div class="project-media project-media--robotics" data-video-type="local" data-video="assets/videos/arduino_car.mp4" data-video-title="Arduino Smart Car — demo">
+          <span class="project-category">Robotics</span>
+          <img class="project-thumb" src="assets/images/arduino_car.png" alt="Arduino smart car photo">
+          <button class="project-play" aria-label="Play Arduino Smart Car video">▶</button>
+        </div>
+        <div class="project-body">
+          <h3>Embedded Systems: Arduino Smart Car</h3>
+          <p>A remote-controlled car built on Arduino with an onboard flame sensor for real-time fire detection and an actuated extinguishing mechanism that triggers automatically once a flame is sensed nearby.</p>
+          <p class="project-detail">The build combines embedded C++ for the sensor-read-and-respond loop with basic motor control logic, turning a hobby RC platform into a small safety-focused robot.</p>
+          <div class="project-tags">
+            <span>Arduino</span><span>Embedded C++</span><span>Sensors</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer wrap">
+  <p>© 2026 Noor e Sahar.</p>
+</footer>
+
+<!-- Video modal: opens when a project's play button is clicked -->
+<div class="video-modal" id="videoModal" aria-hidden="true">
+  <div class="video-modal-inner">
+    <button class="video-close" id="videoClose" aria-label="Close video">✕</button>
+    <p class="video-modal-title" id="videoModalTitle"></p>
+    <div class="video-frame-wrap">
+      <iframe id="videoFrameYoutube" src="" title="Project video" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen hidden></iframe>
+      <video id="videoFrameLocal" controls hidden></video>
+      <p class="video-modal-empty" id="videoModalEmpty" hidden>No video has been added yet — check back soon!</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

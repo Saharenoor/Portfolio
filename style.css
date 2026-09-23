@@ -240,6 +240,16 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 500; margin: 0; }
   background: var(--bg);
 }
 
+/* More Projects page */
+.back-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  color: var(--ink-dim); font-size: 0.9rem;
+  margin-bottom: 24px;
+  transition: color 0.15s;
+}
+.back-link:hover { color: var(--accent); }
+.more-work { padding: 100px 0 100px; }
+
 /* Projects */
 .work { padding: 60px 0 100px; }
 .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 32px; }
@@ -292,6 +302,8 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 500; margin: 0; }
   border: 1px solid var(--line);
   padding: 3px 10px; border-radius: 3px;
 }
+
+.work-more { text-align: center; margin-top: 40px; }
 
 /* Why */
 .why { padding: 60px 0 100px; }
@@ -359,6 +371,7 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 500; margin: 0; }
   text-align: center; padding: 32px;
   color: var(--ink-dim); font-size: 0.95rem;
 }
+.video-modal-empty[hidden] { display: none; }
 .video-close {
   position: absolute;
   top: -44px;
@@ -386,10 +399,11 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 500; margin: 0; }
   .hero-sub { margin-bottom: 36px; }
   .hero-actions { margin-bottom: 32px; }
 
-  .about, .experience, .skills-section, .work, .why, .contact {
+  .about, .experience, .skills-section, .work, .why, .contact, .more-work {
     padding-top: 68px;
     padding-bottom: 76px;
   }
+  .work-more { margin-top: 30px; }
   .section-num { margin-bottom: 18px; }
   .section-sub { margin-bottom: 34px; }
   .about-lead { margin-bottom: 40px; }
